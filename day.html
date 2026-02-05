@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Special</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Dancing+Script:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="day-page">
+
+    <!-- Back Button -->
+    <a href="index.html?skipIntro=true" class="back-btn">← Back to Week</a>
+
+    <div class="background-elements" id="background-elements">
+        <!-- Floating elements injected here -->
+    </div>
+
+    <main class="scene">
+        <div class="card-3d-wrapper" id="card-3d">
+            <div class="card-front">
+                <div class="day-header" id="day-header">
+                    <span id="day-date" class="day-date">FEB 00</span>
+                    <h1 id="day-title" class="day-title">Day Name</h1>
+                </div>
+
+                <div class="gif-container">
+                    <!-- Placeholder for GIF -->
+                    <div class="gif-placeholder">
+                        <span id="day-icon" class="main-icon">❤️</span>
+                        <p class="gif-hint">(Add your cute GIF here!)</p>
+                    </div>
+                    <!-- <img src="URL_HERE" alt="Cute GIF" class="day-gif"> -->
+                </div>
+
+                <div class="day-content">
+                    <p id="day-quote" class="day-quote">"Quote goes here..."</p>
+
+                    <div id="interaction-area" class="interaction-area">
+                        <!-- Dynamic buttons (e.g., Yes/No for proposal) go here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="confetti-container"></div>
+
+    <!-- Music Player Control -->
+    <button id="music-btn" class="music-btn">Click for Music Love 🎵</button>
+    <audio id="bg-music" loop>
+        <source src="assets/valentine.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Love Note Toast -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="day-script.js"></script>
+</body>
+
+</html>
